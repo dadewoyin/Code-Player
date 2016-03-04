@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" charset="utf-8" content="IE=edge,chrome=1">
+<title>CodePlayer</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="code_styles.css" rel="stylesheet">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body id="body">
+
+	<div id="header">
+
+		<div id="mobile-head">
+
+			<h1> CodePlayer </h1>
+
+			<div id="buttonDiv">
+				<button id="runButton"> Execute </button>
+			</div>
+		</div>
+
+		<div id="mobile-toggles">
+		<ul id="toggles">
+			<li class="toggle selected">HTML</li>
+			<li class="toggle">CSS</li>
+			<li class="toggle">JS</li>
+			<li class="toggle selected">Result</li>
+		</ul>
+		</div>
+	</div>
+
+<div class="clear"> </div>
+
+	<div class="codeContainer" id="HTMLContainer">
+		<div class="codeLabel">HTML</div>
+
+		<textarea id="htmlCode" placeholder="Enter HTML here">   
+		<div id="test"> </div> 
+		</textarea>
+	</div>
+
+	<div class="codeContainer" id="CSSContainer">
+		<div class="codeLabel">CSS</div>
+
+		<textarea id="cssCode" placeholder="Enter CSS here">  
+			#test {
+    			background-color: blue;
+    			height: 100px;
+    			width: 150px;
+		} </textarea>
+	</div>
+
+	<div class="codeContainer" id="JSContainer">
+		<div class="codeLabel">JS</div>
+
+		<textarea id="jsCode" placeholder="Enter JS here"> 
+			Due to security concerns, JavaScript code will not run in Result Frame for the public. Code that allows Javascript to run has been commented out. Sorry for any inconvenience. Thank you.
+		</textarea>
+	</div>
+
+	<div class="codeContainer" id="resultContainer">
+		<div class="codeLabel">Result</div>
+
+		<iframe id="resultFrame"></iframe>
+	
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
